@@ -3,20 +3,7 @@ $(document).ready(init);
 
 function init(){
    
-
-   //var clickedFrom = $();
-  // var clickedTo= $();
-
-    //var blockA = $('#box1').data('one');
-   // var blockB = $('#box2').data('two');
-
-   // console.log(blockA>blockB);
-
-
     $('.tower').on('click', gameCtrl)
-   //$('#tower1').click(clickedTower1);
-   //$('#tower2').click(clickedTower2);
-  // $('#tower3').click(clickedTower3);
 
 }
 
@@ -63,14 +50,7 @@ function winning(event){
 
 	if($(event.target).find('.bottom').children().length === 3 && $(event.target).attr('id') === 'tower3'){
 		alert('YOU WIN WOW!!!');
-	}
-
-	/*
-	if($(event.target).children().length === 4 && $(event.target).attr('id') === 'tower3'){
-		alert("YOU WIN!!!!")
-
-	}
-	*/
+	}	
 }
 
 
