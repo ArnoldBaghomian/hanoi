@@ -4,13 +4,13 @@ $(document).ready(init);
 function init(){
    
 
-   var clickedFrom = $();
-   var clickedTo= $();
+   //var clickedFrom = $();
+  // var clickedTo= $();
 
-    var blockA = $('#box1').data('one');
-    var blockB = $('#box2').data('two');
+    //var blockA = $('#box1').data('one');
+   // var blockB = $('#box2').data('two');
 
-    console.log(blockA>blockB);
+   // console.log(blockA>blockB);
 
 
     $('.tower').on('click', gameCtrl)
