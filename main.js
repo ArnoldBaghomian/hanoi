@@ -39,6 +39,7 @@ function moveDisk(event){
 	console.log(diskToMove.text())
 	if(Number(moveToWeight) > Number(diskToMove.text()) || !moveToWeight){
 		$(event.target).find('.bottom').prepend(diskToMove);
+		//console.log('event.target in move disk', $(event.target).find('.bottom'));
 		//$(event.target).prepend(diskToMove)	
 		winning(event);
 	} else{
@@ -55,10 +56,21 @@ function selectDisk(event){
 
 
 function winning(event){
+	
+	console.log('case 1, length of .bottom', $(event.target).find('.bottom').length);
+		console.log('case 2, length of children of .bottom', $(event.target).find('.bottom').children().length);
+
+
+	if($(event.target).find('.bottom').children().length === 3 && $(event.target).attr('id') === 'tower3'){
+		alert('YOU WIN WOW!!!');
+	}
+
+	/*
 	if($(event.target).children().length === 4 && $(event.target).attr('id') === 'tower3'){
 		alert("YOU WIN!!!!")
 
 	}
+	*/
 }
 
 
