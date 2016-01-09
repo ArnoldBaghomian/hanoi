@@ -38,7 +38,8 @@ function moveDisk(event){
 	var moveToWeight = ($(event.target).find('.rings:first-child').text())
 	console.log(diskToMove.text())
 	if(Number(moveToWeight) > Number(diskToMove.text()) || !moveToWeight){
-		$(event.target).prepend(diskToMove)	
+		$(event.target).find('.bottom').prepend(diskToMove);
+		//$(event.target).prepend(diskToMove)	
 		winning(event);
 	} else{
 		return
